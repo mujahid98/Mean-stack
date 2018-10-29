@@ -1,0 +1,17 @@
+<div class="container" >
+    <h1> LOGIN </h1>
+
+    <form >
+        <label>User:</label>
+        <input  class="form-control" type="text" placeholder="username" ng-model="loginCtrl.loginDetails.username"><br>
+        <label>Password:</label>
+        <input class="form-control" type="password" placeholder="password" ng-model="loginCtrl.loginDetails.password"><br>
+        <button class="btn btn-primary" ng-click="loginCtrl.addUser(loginCtrl.loginDetails)" >LOGIN</button>
+
+    </form>
+
+    <div class="alert alert-danger">
+        {{ loginCtrl.message }}
+    </div>
+
+</div>
